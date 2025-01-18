@@ -17,8 +17,8 @@ class AffilData(Base):
     __tablename__ = "affil_data"
 
     data_key = Column(Integer, primary_key=True, unique=True)
-    data_id = Column(String(6), nullable=False)
-    data_pubstring = Column(Text, unique=True, nullable=False)
+    affil_id = Column(String(6), nullable=False)
+    affil_string = Column(Text, unique=True, nullable=False)
     created = Column(UTCDateTime, default=get_date)
     updated = Column(UTCDateTime, onupdate=get_date)
 
@@ -44,8 +44,8 @@ class AffilNorm(Base):
     __tablename__ = "affil_norm"
 
     norm_key = Column(Integer, primary_key=True, unique=True)
-    norm_id = Column(String(6), unique=False, nullable=False)
-    norm_string = Column(Text, unique=True, nullable=False)
+    affil_id = Column(String(6), unique=False, nullable=False)
+    affil_string = Column(Text, unique=True, nullable=False)
 
 
 class AffilCuration(Base):

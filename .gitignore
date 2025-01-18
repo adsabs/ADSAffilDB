@@ -1,4 +1,10 @@
+__pycache__/
+*/__pycache__/
 venv/
 *.py[co]
-logs/
+*/logs/
 *.egg-info/
+local_config.py
+.tmp/
+*/.tmp/
+*/.coverage

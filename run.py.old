@@ -7,8 +7,8 @@ from adsputils import load_config, setup_logging
 from adsaffildb import tasks, utils
 from adsaffildb.models import AffilCuration as affil_curation
 from adsaffildb.models import AffilData as affil_data
-from adsaffildb.models import AffilNorm as affil_norm
 from adsaffildb.models import AffilInst as affil_inst
+from adsaffildb.models import AffilNorm as affil_norm
 
 proj_home = os.path.realpath(os.path.dirname(__file__))
 config = load_config(proj_home=proj_home)
@@ -105,6 +105,9 @@ def main():
             logger.error("No matched affiliation file name specified.")
         else:
             load_matched_affils(file_matched)
+
+    if args.normalize:
+        tasks.task_normalize_affils()
 
     return
 
