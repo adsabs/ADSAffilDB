@@ -1,6 +1,6 @@
 [project]
-name = "adsaffildb"
-version = "0.2.0"
+name = "affildb"
+version = "0.2.1"
 description = "Affiliation database management pipeline"
 authors = [{ name = "Matthew Templeton", email = "matthew.templeton@cfa.harvard.edu"}]
 license = { text = "MIT" }
@@ -15,7 +15,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries",
 ]
 packages = [
-    "adsaffildb",
+    "affildb",
 ]
 
 dependencies = [
@@ -26,7 +26,7 @@ dependencies = [
 
 [project.urls]
 Source = "https://github.com/adsabs/ADSAffilDB"
-Documentation = "https://adsaffildb.readthedocs.io"
+Documentation = "https://affildb.readthedocs.io"
 
 
 [project.optional-dependencies]
@@ -55,7 +55,7 @@ docs = [
 [tool.semantic_release]
 branch = "main"
 version_toml = "pyproject.toml:project.version"
-version_variable = "adsaffildb/version.py:__version__"
+version_variable = "affildb/version.py:__version__"
 build_command = "flit build"
 
 [tool.pytest.ini_options]
@@ -71,7 +71,7 @@ skip_covered = true
 
 [tool.isort]
 profile = "black"
-known_first_party = ["adsaffildb", "tests"]
+known_first_party = ["affildb", "tests"]
 
 [tool.black]
 line-length = 99 # override black's default line-length
@@ -84,7 +84,7 @@ build-backend = "flit_core.buildapi"
 # see setup.py for explanation of these
 [xsetup.entry_points]
 console_scripts = [
-    "adsaffildb=adsaffildb.cli:cli",
+    "affildb=affildb.cli:cli",
 ]
 [xsetup]
 scripts = [
