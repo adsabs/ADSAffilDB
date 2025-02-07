@@ -37,8 +37,8 @@ def upgrade() -> None:
     op.create_table(
         "affil_data",
         sa.Column("data_key", sa.Integer(), autoincrement=True, nullable=False),
-        sa.Column("data_id", sa.String(), nullable=False),
-        sa.Column("data_pubstring", sa.String(), nullable=False),
+        sa.Column("affil_id", sa.String(), nullable=False),
+        sa.Column("affil_string", sa.String(), nullable=False),
         sa.Column("created", UTCDateTime, nullable=True, default=get_date),
         sa.Column("updated", UTCDateTime, nullable=True, onupdate=get_date),
         sa.ForeignKeyConstraint(["data_id"], ["affil_inst.inst_id"]),
@@ -46,10 +46,34 @@ def upgrade() -> None:
         sa.UniqueConstraint("data_pubstring"),
     )
 
+    op.create_table(
+        "affil_norm",
+        sa.Column("norm_key", sa.Integer(), autoincrement=True, nullable=False),
+        sa.Column("affil_id", sa.String(), nullable=False),
+        sa.Column("affil_string", sa.String(), nullable=False),
+        sa.PrimaryKeyConstraint("norm_key"),
+        sa.UniqueConstraint("norm_string"),
+    )
+
+    op.create_table(
+        "affil_curation",
+        sa.Column("curation_key", sa.Integer(), autoincrement=True,
+            nullable=False),
+        sa.Column("curation_count", sa.Integer(), nullable=True),
+        sa.Column("affil_id", sa.String(), unique=False, nullable=True),
+        sa.Column("affil_string", sa.String(), unique=True, nullable=False),
+        sa.Column("norm_string", sa.String(), unique=False, nullable=False),
+        sa.PrimaryKeyConstraint("curation_key"),
+        sa.UniqueConstraint("affil_string"),
+    )
+
+
     # end of Alembic upgrade
 
 
 def downgrade() -> None:
+    op.drop_table("affil_curation")
+    op.drop_table("affil_norm")
     op.drop_table("affil_data")
     op.drop_table("affil_inst")
 

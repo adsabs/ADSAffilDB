@@ -24,7 +24,15 @@ logger = app.logger
 app.conf.CELERY_QUEUES = (
     Queue("normalize", app.exchange, routing_key="normalize"),
     Queue("augment", app.exchange, routing_key="augment"),
+    Queue("write-db", app.exchange, routing_key="write-db"),
 )
+
+@app.task(queue="write-db")
+def task_write_block(table, datablock):
+    try:
+        db.write_block(app, table, datablock)
+    except Exception as err:
+        logger.warning("Unable to write block to db: %s" % err)
 
 @app.task(queue="augment")
 def task_query_one_affil(input_string, normalize=True):
