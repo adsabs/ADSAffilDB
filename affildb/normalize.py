@@ -60,32 +60,3 @@ def normalize_string(string, kill_spaces=False, upper_case=False):
         return string
     except Exception as err:
         raise NormalizeStringException("Error in normalize_string: %s" % err)
-
-
-def normalize_block(data):
-    try:
-        output = []
-        conflicts = {}
-        failures = ()
-        seen = {}
-        for rec in data:
-            oldstring = rec[1]
-            if oldstring:
-                try:
-                    newstring = normalize_string(oldstring)
-                except Exception as err:
-                    failures.append({"aff_id": rec[0],
-                                     "aff_string": rec[1],
-                                     "error": err})
-                if not seen.get(newstring, None):
-                    output.append({"affil_id": rec[0], "affil_string": newstring})
-                    seen[newstring] = [rec[0]]
-                else:
-                    if rec[0] not in seen.get(newstring, []):
-                        seen[newstring].append(rec[0])
-        for k,v in seen.items():
-            if len(v) > 1:
-                conflicts[k] = v
-        return (output, conflicts, failures)
-    except Exception as err:
-        raise BatchNormalizeException("Failed to normalize batch: %s" % err)
