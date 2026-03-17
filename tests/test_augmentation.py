@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from adsaffildb import tasks
+from affildb import tasks
 
 
 class TestAugment(unittest.TestCase):

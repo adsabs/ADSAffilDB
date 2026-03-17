@@ -56,7 +56,7 @@ def get_app_config(key):
     if opath not in sys.path:
         sys.path.insert(0, opath)
 
-    from adsaffildb.tasks import app
+    from affildb.tasks import app
 
     print("Getting actual config for", key, app.conf.get(key))
     return app.conf.get(key)

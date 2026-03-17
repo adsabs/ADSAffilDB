@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from adsaffildb import normalize
+from affildb import normalize
 
 
 class TestNormalize(unittest.TestCase):

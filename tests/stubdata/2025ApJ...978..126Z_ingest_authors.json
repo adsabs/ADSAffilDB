@@ -1,0 +1,75 @@
+[
+  {
+    "affiliation": [
+      {
+        "affPubRaw": "Physics and Astronomy Department, Johns Hopkins University, Baltimore, MD 21218, USA"
+      },
+      {
+        "affPubRaw": "Space Telescope Science Institute, Baltimore, MD 21218, USA"
+      }
+    ],
+    "attrib": {
+      "corresp": true,
+      "email": "yzenati1@jhu.edu",
+      "orcid": "0000-0002-0632-8897"
+    },
+    "name": {
+      "given_name": "Yossef",
+      "surname": "Zenati"
+    }
+  },
+  {
+    "affiliation": [
+      {
+        "affPubRaw": "Gonville & Caius College, Trinity Street, Cambridge CB2 1TA, UK"
+      },
+      {
+        "affPubRaw": "Institute of Astronomy, University of Cambridge, Madingley Road, Cambridge CB3 0HA, UK"
+      },
+      {
+        "affPubRaw": "Institute for Advanced Study, Einstein Drive, Princeton, NJ 08540, USA"
+      },
+      {
+        "affPubRaw": "Technion-Israel Institute of Technology, Physics Department, Haifa 3200002, Israel"
+      }
+    ],
+    "attrib": {
+      "orcid": "0000-0002-2728-0132"
+    },
+    "name": {
+      "given_name": "Mor",
+      "surname": "Rozner"
+    }
+  },
+  {
+    "affiliation": [
+      {
+        "affPubRaw": "Physics and Astronomy Department, Johns Hopkins University, Baltimore, MD 21218, USA"
+      }
+    ],
+    "attrib": {
+      "orcid": "0000-0002-2995-7717"
+    },
+    "name": {
+      "given_name": "Julian H.",
+      "surname": "Krolik"
+    }
+  },
+  {
+    "affiliation": [
+      {
+        "affPubRaw": "TAPIR, Mailcode 350-17, California Institute of Technology, Pasadena, CA 91125, USA"
+      },
+      {
+        "affPubRaw": "Walter Burke Institute for Theoretical Physics, California Institute of Technology, Pasadena, CA 91125, USA"
+      }
+    ],
+    "attrib": {
+      "orcid": "0000-0002-0491-1210"
+    },
+    "name": {
+      "given_name": "Elias R.",
+      "surname": "Most"
+    }
+  }
+]

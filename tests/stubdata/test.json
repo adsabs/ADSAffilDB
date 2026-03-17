@@ -1,0 +1,113 @@
+{
+  "abstract": "I like puppies.",
+  "aff": [
+    "Department of Physics, University of California, Berkeley, CA 94720"
+  ],
+  "alternate_bibcode": [
+    "2024arXiv241005391Z"
+  ],
+  "arxiv_class": [
+    "astro-ph.HE"
+  ],
+  "author": [
+    "McMann, Person"
+  ],
+  "author_count": 1,
+  "author_facet": [
+    "Zenati, Y"
+  ],
+  "author_facet_hier": [
+    "0/McMann, P",
+    "1/McMann, P/McMann, Person"
+  ],
+  "author_norm": [
+    "McMann, P"
+  ],
+  "bibcode": "2025ApJ..2345..678Z",
+  "bibstem": [
+    "ApJ",
+    "ApJ..2345"
+  ],
+  "bibstem_facet": "ApJ",
+  "copyright": [
+    "\u00a9 2025. The Author(s). Published by the American Astronomical Society."
+  ],
+  "database": [
+    "astronomy"
+  ],
+  "date": "2025-01-01T00:00:00.000000Z",
+  "doctype": "article",
+  "doctype_facet_hier": [
+    "0/Article",
+    "1/Article/Journal Article"
+  ],
+  "doi": [
+    "10.3847/1538-4357/ad9b87",
+    "10.48550/arXiv.2410.05391"
+  ],
+  "eid": "126",
+  "email": [
+    "yzenati1@jhu.edu"
+  ],
+  "entry_date": "2025-04-13T00:00:00.000000Z",
+  "first_author": "Zenati, Yossef",
+  "first_author_facet_hier": [
+    "0/Zenati, Y",
+    "1/Zenati, Y/Zenati, Yossef"
+  ],
+  "first_author_norm": "Zenati, Y",
+  "id": "41838641",
+  "identifier": [
+    "2024arXiv241005391Z",
+    "10.3847/1538-4357/ad9b87",
+    "2025ApJ...978..126Z",
+    "arXiv:2410.05391",
+    "10.48550/arXiv.2410.05391"
+  ],
+  "issn": [
+    "0004-637X"
+  ],
+  "issue": "2",
+  "keyword": [
+    "puppies",
+    "yay!"
+  ],
+  "keyword_facet": [
+    "puppies"
+  ],
+  "keyword_norm": [
+    "puppies",
+    "-"
+  ],
+  "keyword_schema": [
+    "lolwut"
+  ],
+  "links_data": [
+    "{\"access\": \"\", \"instances\": \"1\", \"title\": \"\", \"type\": \"simbad\", \"url\": \"http://$SIMBAD$/simbo.pl?bibcode=2025ApJ...978..126Z\"}",
+    "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"pdf\", \"url\": \"https://iopscience.iop.org/article/10.3847/1538-4357/ad9b87/pdf\"}",
+    "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"preprint\", \"url\": \"http://arxiv.org/abs/2410.05391\"}",
+    "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.3847/1538-4357/ad9b87\"}"
+  ],
+  "orcid_pub": [
+    "0000-0002-0632-8897",
+    "0000-0002-2728-0132",
+    "0000-0002-2995-7717",
+    "0000-0002-0491-1210"
+  ],
+  "page": [
+    "678"
+  ],
+  "page_count": 8,
+  "pub": "The Astrophysical Journal",
+  "pub_raw": "The Astrophysical Journal, Volume 978, Issue 2, id.126, 8 pp.",
+  "pubdate": "2025-01-00",
+  "publisher": "IOP",
+  "pubnote": [
+    "Accepted for Publication in ApJ"
+  ],
+  "title": [
+    "Puppies are the best"
+  ],
+  "volume": "978",
+  "year": "2025"
+}

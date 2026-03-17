@@ -1,0 +1,53 @@
+{
+  "aff": [
+    "Physics and Astronomy Department, Johns Hopkins University, Baltimore, MD 21218, USA; Space Telescope Science Institute, Baltimore, MD 21218, USA",
+    "Gonville &amp; Caius College, Trinity Street, Cambridge CB2 1TA, UK; Institute of Astronomy, University of Cambridge, Madingley Road, Cambridge CB3 0HA, UK; Institute for Advanced Study, Einstein Drive, Princeton, NJ 08540, USA; Technion-Israel Institute of Technology, Physics Department, Haifa 3200002, Israel",
+    "Physics and Astronomy Department, Johns Hopkins University, Baltimore, MD 21218, USA",
+    "TAPIR, Mailcode 350-17, California Institute of Technology, Pasadena, CA 91125, USA; Walter Burke Institute for Theoretical Physics, California Institute of Technology, Pasadena, CA 91125, USA"
+  ],
+  "aff_abbrev": [
+    "JHU/Dep Phy Ast; STScI/STScI",
+    "U Camb/U Camb; U Camb/IoA; Princeton IAS/Princeton IAS; -",
+    "JHU/Dep Phy Ast",
+    "Caltech/Div Phy Math Ast; Caltech/Div Phy Math Ast"
+  ],
+  "aff_canonical": [
+    "Johns Hopkins University, Department of Physics and Astronomy; Space Telescope Science Institute, Baltimore, Maryland",
+    "University of Cambridge, UK; University of Cambridge, Institute of Astronomy; Princeton Institute for Advanced Study, New Jersey; -",
+    "Johns Hopkins University, Department of Physics and Astronomy",
+    "California Institute of Technology, Division of Physics, Mathematics and Astronomy; California Institute of Technology, Division of Physics, Mathematics and Astronomy"
+  ],
+  "aff_country": [
+    "USA; USA",
+    "UK; UK; USA; -",
+    "USA",
+    "USA", "USA"
+  ],
+  "aff_facet_hier": [
+    "0/JHU",
+    "1/JHU/Dep Phy Ast",
+    "0/STScI",
+    "1/STScI/STScI",
+    "0/U Camb",
+    "1/U Camb/U Camb",
+    "1/U Camb/IoA",
+    "0/Princeton IAS",
+    "1/Princeton IAS/Princeton IAS",
+    "0/Caltech",
+    "1/Caltech/Div Phy Math Ast"
+  ],
+  "aff_id": [
+    "A00142; A03671",
+    "A00316; A00319; A01134; -",
+    "A00142",
+    "A01098; A01098"
+  ],
+  "author": [
+    "Zenati, Yossef",
+    "Rozner, Mor",
+    "Krolik, Julian H.",
+    "Most, Elias R."
+  ],
+  "bibcode": "2025ApJ...978..126Z",
+  "scix_id": "lolwut"
+}

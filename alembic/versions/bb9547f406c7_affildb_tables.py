@@ -26,10 +26,12 @@ def upgrade() -> None:
         sa.Column("inst_canonical", sa.String(), nullable=False),
         sa.Column("inst_abbreviation", sa.String(), nullable=False),
         sa.Column("inst_location", sa.String(), nullable=True),
-        sa.Column("inst_country", sa.String(), nullable=True),
+        sa.Column("inst_country", sa.String(), nullable=False),
+        sa.Column("inst_iso_country", sa.String(), nullable=False),
         sa.Column("inst_rorid", sa.String(), nullable=True),
         sa.Column("inst_notes", sa.Text(), nullable=True),
         sa.Column("created", UTCDateTime, nullable=True, default=get_date),
+        sa.Column("updated", UTCDateTime, nullable=True, onupdate=get_date),
         sa.PrimaryKeyConstraint("inst_key"),
         sa.UniqueConstraint("inst_id"),
     )
@@ -37,34 +39,36 @@ def upgrade() -> None:
     op.create_table(
         "affil_data",
         sa.Column("data_key", sa.Integer(), autoincrement=True, nullable=False),
-        sa.Column("affil_id", sa.String(), nullable=False),
-        sa.Column("affil_string", sa.String(), nullable=False),
+        sa.Column("affil_id", sa.String(), index=True, nullable=False),
+        sa.Column("affil_string", sa.Text(), nullable=False),
+        sa.Column("norm_string", sa.Text(), index=True, nullable=False),
+        sa.Column("flagged", sa.Boolean(), nullable=True),
         sa.Column("created", UTCDateTime, nullable=True, default=get_date),
         sa.Column("updated", UTCDateTime, nullable=True, onupdate=get_date),
-        sa.ForeignKeyConstraint(["data_id"], ["affil_inst.inst_id"]),
-        sa.PrimaryKeyConstraint("data_key"),
-        sa.UniqueConstraint("data_pubstring"),
+        # sa.ForeignKeyConstraint(["affil_id"], ["affil_inst.inst_id"]),
+        sa.PrimaryKeyConstraint("data_key", "affil_id", "norm_string", name="lookup"),
+        sa.UniqueConstraint("affil_string"),
     )
 
-    op.create_table(
-        "affil_norm",
-        sa.Column("norm_key", sa.Integer(), autoincrement=True, nullable=False),
-        sa.Column("affil_id", sa.String(), nullable=False),
-        sa.Column("affil_string", sa.String(), nullable=False),
-        sa.PrimaryKeyConstraint("norm_key"),
-        sa.UniqueConstraint("norm_string"),
+    op.create_index(
+        "norm_index",
+        "affil_data",
+        ["norm_string"],
+        unique=False,
+        postgresql_using="HASH",
     )
 
     op.create_table(
         "affil_curation",
         sa.Column("curation_key", sa.Integer(), autoincrement=True,
             nullable=False),
-        sa.Column("curation_count", sa.Integer(), nullable=True),
-        sa.Column("affil_id", sa.String(), unique=False, nullable=True),
-        sa.Column("affil_string", sa.String(), unique=True, nullable=False),
-        sa.Column("norm_string", sa.String(), unique=False, nullable=False),
-        sa.PrimaryKeyConstraint("curation_key"),
-        sa.UniqueConstraint("affil_string"),
+        sa.Column("data_key", sa.Integer(), nullable=False),
+        sa.Column("affil_id", sa.String(), nullable=False),
+        sa.Column("affil_string", sa.String(), nullable=False),
+        sa.Column("norm_string", sa.String(), nullable=False),
+        sa.Column("notes", sa.String(), nullable=False, default=""),
+        sa.Column("created", UTCDateTime, nullable=True, default=get_date),
+        sa.PrimaryKeyConstraint("curation_key", "data_key", "affil_id", "norm_string", name="dpairs"),
     )
 
 
@@ -73,7 +77,7 @@ def upgrade() -> None:
 
 def downgrade() -> None:
     op.drop_table("affil_curation")
-    op.drop_table("affil_norm")
+    op.drop_index("norm_index", table_name="affil_data", postgresql_using="hash")
     op.drop_table("affil_data")
     op.drop_table("affil_inst")
 

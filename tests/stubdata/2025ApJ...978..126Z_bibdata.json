@@ -1,0 +1,156 @@
+{
+  "abstract": "Black hole\u2013neutron star binaries are of interest in many ways: they are intrinsically transient, radiate gravitational waves detectable by LIGO, and may produce \u03b3-ray bursts. Although it has long been assumed that their late-stage orbital evolution is driven entirely by gravitational wave emission, we show here that in certain circumstances, mass transfer from the neutron star onto the black hole can both alter the binary's orbital evolution and significantly reduce the neutron star's mass: when the fraction of its mass transferred per orbit is \u227310<SUP>\u20112</SUP>, the neutron star's mass diminishes by order unity, leading to mergers in which the neutron star mass is exceptionally small. The mass transfer creates a gas disk around the black hole before merger that can be comparable in mass to the debris remaining after merger, i.e., ~0.1 M<SUB>\u2299</SUB>. These processes are most important when the initial neutron star\u2013black hole mass ratio q is in the range \u22480.2\u20130.8, the orbital semimajor axis is 40 \u2272 a<SUB>0</SUB>/r<SUB>g</SUB> \u2272 300 (r<SUB>g</SUB> \u2261 GM<SUB>BH</SUB>/c<SUP>2</SUP>), and the eccentricity is large at e<SUB>0</SUB> \u2273 0.8. Systems of this sort may be generated through the dynamical evolution of a triple system, as well as by other means.",
+  "aff": [
+    "Physics and Astronomy Department, Johns Hopkins University, Baltimore, MD 21218, USA; Space Telescope Science Institute, Baltimore, MD 21218, USA",
+    "Gonville &amp; Caius College, Trinity Street, Cambridge CB2 1TA, UK; Institute of Astronomy, University of Cambridge, Madingley Road, Cambridge CB3 0HA, UK; Institute for Advanced Study, Einstein Drive, Princeton, NJ 08540, USA; Technion-Israel Institute of Technology, Physics Department, Haifa 3200002, Israel",
+    "Physics and Astronomy Department, Johns Hopkins University, Baltimore, MD 21218, USA",
+    "TAPIR, Mailcode 350-17, California Institute of Technology, Pasadena, CA 91125, USA; Walter Burke Institute for Theoretical Physics, California Institute of Technology, Pasadena, CA 91125, USA"
+  ],
+  "alternate_bibcode": [
+    "2024arXiv241005391Z"
+  ],
+  "arxiv_class": [
+    "astro-ph.HE"
+  ],
+  "author": [
+    "Zenati, Yossef",
+    "Rozner, Mor",
+    "Krolik, Julian H.",
+    "Most, Elias R."
+  ],
+  "author_count": 4,
+  "author_facet": [
+    "Zenati, Y",
+    "Rozner, M",
+    "Krolik, J",
+    "Most, E"
+  ],
+  "author_facet_hier": [
+    "0/Zenati, Y",
+    "1/Zenati, Y/Zenati, Yossef",
+    "0/Rozner, M",
+    "1/Rozner, M/Rozner, Mor",
+    "0/Krolik, J",
+    "1/Krolik, J/Krolik, Julian H",
+    "0/Most, E",
+    "1/Most, E/Most, Elias R"
+  ],
+  "author_norm": [
+    "Zenati, Y",
+    "Rozner, M",
+    "Krolik, J",
+    "Most, E"
+  ],
+  "bibcode": "2025ApJ...978..126Z",
+  "bibstem": [
+    "ApJ",
+    "ApJ...978"
+  ],
+  "bibstem_facet": "ApJ",
+  "copyright": [
+    "\u00a9 2025. The Author(s). Published by the American Astronomical Society."
+  ],
+  "database": [
+    "astronomy"
+  ],
+  "date": "2025-01-01T00:00:00.000000Z",
+  "doctype": "article",
+  "doctype_facet_hier": [
+    "0/Article",
+    "1/Article/Journal Article"
+  ],
+  "doi": [
+    "10.3847/1538-4357/ad9b87",
+    "10.48550/arXiv.2410.05391"
+  ],
+  "eid": "126",
+  "email": [
+    "yzenati1@jhu.edu",
+    "-",
+    "yzenati1@jhu.edu",
+    "-"
+  ],
+  "entry_date": "2025-04-13T00:00:00.000000Z",
+  "first_author": "Zenati, Yossef",
+  "first_author_facet_hier": [
+    "0/Zenati, Y",
+    "1/Zenati, Y/Zenati, Yossef"
+  ],
+  "first_author_norm": "Zenati, Y",
+  "id": "41838641",
+  "identifier": [
+    "2024arXiv241005391Z",
+    "10.3847/1538-4357/ad9b87",
+    "2025ApJ...978..126Z",
+    "arXiv:2410.05391",
+    "10.48550/arXiv.2410.05391"
+  ],
+  "issn": [
+    "0004-637X"
+  ],
+  "issue": "2",
+  "keyword": [
+    "Neutron stars",
+    "Astrophysical black holes",
+    "General relativity",
+    "Roche lobe overflow",
+    "1108",
+    "98",
+    "641",
+    "2155",
+    "Astrophysics - High Energy Astrophysical Phenomena"
+  ],
+  "keyword_facet": [
+    "neutron"
+  ],
+  "keyword_norm": [
+    "neutron",
+    "-",
+    "-",
+    "-",
+    "-",
+    "-",
+    "-",
+    "-",
+    "-"
+  ],
+  "keyword_schema": [
+    "Astronomy",
+    "Astronomy",
+    "Astronomy",
+    "Astronomy",
+    "UAT",
+    "UAT",
+    "UAT",
+    "UAT",
+    "arXiv"
+  ],
+  "links_data": [
+    "{\"access\": \"\", \"instances\": \"1\", \"title\": \"\", \"type\": \"simbad\", \"url\": \"http://$SIMBAD$/simbo.pl?bibcode=2025ApJ...978..126Z\"}",
+    "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"pdf\", \"url\": \"https://iopscience.iop.org/article/10.3847/1538-4357/ad9b87/pdf\"}",
+    "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"preprint\", \"url\": \"http://arxiv.org/abs/2410.05391\"}",
+    "{\"access\": \"open\", \"instances\": \"\", \"title\": \"\", \"type\": \"electr\", \"url\": \"http://dx.doi.org/10.3847/1538-4357/ad9b87\"}"
+  ],
+  "orcid_pub": [
+    "0000-0002-0632-8897",
+    "0000-0002-2728-0132",
+    "0000-0002-2995-7717",
+    "0000-0002-0491-1210"
+  ],
+  "page": [
+    "126"
+  ],
+  "page_count": 8,
+  "pub": "The Astrophysical Journal",
+  "pub_raw": "The Astrophysical Journal, Volume 978, Issue 2, id.126, 8 pp.",
+  "pubdate": "2025-01-00",
+  "publisher": "IOP",
+  "pubnote": [
+    "Accepted for Publication in ApJ"
+  ],
+  "title": [
+    "Mass Transfer in Eccentric Black Hole\u2013Neutron Star Mergers"
+  ],
+  "volume": "978",
+  "year": "2025"
+}

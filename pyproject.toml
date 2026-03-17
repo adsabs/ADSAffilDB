@@ -6,7 +6,7 @@ authors = [{ name = "Matthew Templeton", email = "matthew.templeton@cfa.harvard.
 license = { text = "MIT" }
 readme = "README.md"
 repository = "https://github.com/adsabs/ADSAffilDB"
-documentation = "https://adsaffildb.readthedocs.io"
+documentation = "https://affildb.readthedocs.io"
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
     "Intended Audience :: Developers",
@@ -59,7 +59,7 @@ version_variable = "affildb/version.py:__version__"
 build_command = "flit build"
 
 [tool.pytest.ini_options]
-addopts = "-v -Wdefault --cov=adsaffildb"
+addopts = "-v -Wdefault --cov=affildb"
 cache_dir = ".tmp/"
 
 [tool.coverage.run]
